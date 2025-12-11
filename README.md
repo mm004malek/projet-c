@@ -52,7 +52,7 @@ void log_event(float t, int niveau) {
     fclose(f);
 }
 
-//  Fonction supplémentaire 
+//  Fonction statistique
 void afficher_statistiques(int count, float t, int niveau, int cons) {
     printf("Mesure %d : Temp=%.2f°C | Niveau=%d | Alertes consécutives=%d\n",
            count, t, niveau, cons);
@@ -112,7 +112,7 @@ int main() {
         sum += t;
         count++;
 
-        // Fonction supplémentaire 
+        // Fonction statistique
         afficher_statistiques(count, t, niveau, cons);
 
         sleep(cfg.intervalle);
