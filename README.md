@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <unistd.h>  // pour sleep()
 
 // Configuration (Tâche 1)
 typedef struct {
@@ -114,8 +113,6 @@ int main() {
 
         // Fonction statistique
         afficher_statistiques(count, t, niveau, cons);
-
-        sleep(cfg.intervalle);
     }
 
     // --------- Tâche 6 : Génération du rapport (fonction séparée) ---------
